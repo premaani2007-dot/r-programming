@@ -1,0 +1,17 @@
+  emp_data <- data.frame(
+  name = c("Rani", "Kavya", "Suresh"),
+  salary = c(25000, 40000, 55000)
+)
+
+write.csv(emp_data, "employee.csv", row.names = FALSE)
+
+cat("CSV File created successfully\n")
+
+data <- read.csv("employee.csv")
+print(data)
+
+barplot(data$salary,
+        names.arg = data$name,
+        main = "Employee Salary",
+        xlab = "Name",
+        ylab = "Salary")
