@@ -1,0 +1,14 @@
+text <- "R Programming"
+
+cat("Original String:", text, "\n")
+cat("Length:", nchar(text), "\n")
+cat("Uppercase:", toupper(text), "\n")
+cat("Lowercase:", tolower(text), "\n")
+cat("Substring:", substr(text, 1, 5), "\n")
+
+words <- strsplit(text, " ")[[1]]
+cat("First Word:", words[1], "\n")
+cat("Second Word:", words[2], "\n")
+
+newtext <- paste("Learn", text)
+cat("Joined String:", newtext, "\n")
