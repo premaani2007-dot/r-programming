@@ -1,0 +1,13 @@
+n <- 10
+even <- c()
+
+for (i in 1:n) {
+  if (i %% 2 == 0) {
+    even <- c(even, i)
+  }
+}
+
+cat("Even numbers from 1 to", n, "are:\n")
+for (x in even) {
+  cat(x, " ")
+}
