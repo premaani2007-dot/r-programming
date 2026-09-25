@@ -1,0 +1,11 @@
+square_numbers <- function(n) {
+  for (i in 1:n) {
+    sq <- i * i
+    cat("Square of", i, "=", sq, "\n")
+  }
+}
+
+n <- 5
+
+cat("Squares of numbers in sequence:\n")
+square_numbers(n)
