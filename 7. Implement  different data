@@ -1,0 +1,15 @@
+numbers <- c(10, 20, 30, 40)
+cat("Vector:\n")
+print(numbers)
+
+student <- list(Name = "Anu", Age = 20, Marks = 85)
+cat("List:\n")
+print(student)
+
+df <- data.frame(
+  Name = c("Anu", "Banu"),
+  Marks = c(85, 90)
+)
+
+cat("Data Frame:\n")
+print(df)
