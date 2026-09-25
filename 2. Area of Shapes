@@ -1,0 +1,15 @@
+l <- 10
+b <- 5
+s <- 6
+r <- 7
+h <- 8
+
+rectangle <- l * b
+square <- s^2
+circle <- pi * r^2
+triangle <- 0.5 * b * h
+
+cat("Rectangle Area =", rectangle, "\n")
+cat("Square Area =", square, "\n")
+cat("Circle Area =", round(circle, 2), "\n")
+cat("Triangle Area =", triangle, "\n")
