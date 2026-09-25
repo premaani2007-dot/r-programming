@@ -1,0 +1,16 @@
+name <- c("Anu", "Banu", "Cathy")
+marks <- c(80, 75, 90)
+
+df1 <- data.frame(Name = name)
+df2 <- data.frame(Marks = marks)
+
+result_col <- cbind(df1, df2)
+
+new_row <- data.frame(Name = "Divya", Marks = 85)
+result_row <- rbind(result_col, new_row)
+
+cat("After joining columns:\n")
+print(result_col)
+
+cat("After adding a row:\n")
+print(result_row)
